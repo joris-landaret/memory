@@ -15,7 +15,7 @@
                 <li><a href="http://memory/connexion.php">Connexion</a></li>
                 <li><a href="http://memory/inscription.php">Inscription</a></li>
                 <?php endif; ?>
-                <li><a href="http://memory/livre-or">Tableau des scores</a></li>
+                <li><a href="http://memory/score">Tableau des scores</a></li>
             </ul>
         </div>
 
