@@ -44,7 +44,7 @@ if(isset($_POST['envoi'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil</title>
+    <title>Tableau des scores</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/commentaire.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -55,15 +55,54 @@ if(isset($_POST['envoi'])){
     <main>
 
         <div>
-            <h1>Commentaire</h1>
+            <h1>Tableau des scores</h1>
             
-            <form action="" method="post">
-                
-                <label for="commentaire">Insérer votre commentaire</label>
-                <textarea name="commment" cols="10" rows="10" wrap="hard"></textarea>
-
-                <input type="submit" name="envoi">
-            </form>
+            <table border="1">
+                <tr>
+                    <th>Pseudo</th>
+                    <th>Nombre d'essai</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
 
     </main>
