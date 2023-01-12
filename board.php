@@ -53,7 +53,20 @@ include "Card.php";
 
             $alien_card = new Card($dos, $alien);
 
+            $tabl = array(
+                $alien, $alien, $valkyrie_card->back(),
+                $valkyrie_card->back(), $pegase_card->back(),
+                $pegase_card->back(), $fenrir_card->back(), $fenrir_card->back(),
+                $fee_card->back(), $fee_card->back(), $ent_card->back(),
+                $ent_card->back(), $vampire_card->back(), $vampire_card->back(),
+                $loup_garou_card->back(), $loup_garou_card->back(),
+                $dragon_card->back(), $dragon_card->back(), $ange_card->back(),
+                $ange_card->back(), $demon_card->back(), $demon_card->back(),
+                $zombi_card->back(), $zombi_card->back()
+            );
+
             ?>
+
         </div>
     </main>
 
