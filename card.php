@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $dos = '<form action="" method="$_POST"><input type="image" name="flip" alt="ok" class="img" src="img/back1.jpg"></form>';
 $ange = '<div class="img"><img src="img/ange1.jpg"></img></div>';
 $demon = '<div class="img"><img src="img/demon.jpg"></img></div>';
