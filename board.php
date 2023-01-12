@@ -65,6 +65,12 @@ include "Card.php";
                 $zombi_card->back(), $zombi_card->back()
             );
 
+            shuffle($tabl);
+
+            foreach ($tabl as $value) {
+                echo $value;
+            }
+
             ?>
 
         </div>
