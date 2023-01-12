@@ -16,9 +16,8 @@ include "Card.php";
 </head>
 
 <body>
-    <header>
 
-    </header>
+    <?php include('header.php') ?>
 
     <main>
         <h1>MEMORY</h1>
@@ -76,10 +75,7 @@ include "Card.php";
         </div>
     </main>
 
-    <footer>
-
-
-    </footer>
+    <?php include('footer.php') ?>
 
 </body>
 
