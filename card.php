@@ -1,45 +1,44 @@
 <?php
 
-session_start();
-
-$dos = '<form action="" method="$_POST"><input type="image" name="flip" alt="ok" class="img" src="img/back1.jpg"></form>';
-$ange = '<div class="img"><img src="img/ange1.jpg"></img></div>';
-$demon = '<div class="img"><img src="img/demon.jpg"></img></div>';
-$dragon = '<div class="img"><img src="img/dragon.jpg"></img></div>';
-$loup_garou = '<div class="img"><img src="img/loup_garou.jpg"></img></div>';
-$vampire = '<div class="img"><img src="img/vampire1.jpg"></img></div>';
-$ent = '<div class="img"><img src="img/ent.jpg"></img></div>';
-$fee = '<div class="img"><img src="img/fée.jpg"></img></div>';
-$fenrir = '<div class="img"><img src="img/fenrir.jpg"></img></div>';
-$pegase = '<div class="img"><img src="img/pegase.jpg"></img></div>';
-$valkyrie = '<div class="img"><img src="img/valkyrie.jpg"></img></div>';
-$zombi = '<div class="img"><img src="img/zombie1.jpg"></img></div>';
-$alien = '<div class="img"><img src="img/alien.jpg"></img></div>';
-
 class Card
 {
     // ATTRIBUT
     public $back;
-    public $face;
+    private $cards = [
+        'ange' => '<div class="img"><img src="img/ange1.jpg" /></div>',
+        'demon' => '<div class="img"><img src="img/demon.jpg" /></div>',
+        'dragon' => '<div class="img"><img src="img/dragon.jpg /></div>',
+        'loup_garou' => '<div class="img"><img src="img/loup_garou.jpg"></img></div>',
+        'vampire' => '<div class="img"><img src="img/vampire1.jpg" /></div>',
+        'ent' => '<div class="img"><img src="img/ent.jpg" /></div>',
+        'fee' => '<div class="img"><img src="img/fée.jpg /></div>',
+        'fenrir' => '<div class="img"><img src="img/fenrir.jpg /></div>',
+        'pegase' => '<div class="img"><img src="img/pegase.jpg /></div>',
+        'valkyrie' => '<div class="img"><img src="img/valkyrie /></div>',
+        'zombi' => '<div class="img"><img src="img/zombie1 /></div>',
+        'alien' => '<div class="img"><img src="img/alien.jpg /></div>'
+    ];
+    public $stats;
 
 
     // CONSTRUCTION
-    public function __construct($back, $face)
+    public function __construct($face)
     {
-        $this->back = $back;
-        $this->face = $face;
+        $this->back = '<form action="" method="post"><input type="image" name="flip" alt="ok" class="img" src="img/back1.jpg"></form>';
+        $this->face = $this->cards[$face];
+        $this->turn_back();
     }
 
     // METHODE \\
     // dos de la carte
-    public function back()
+    public function turn_back()
     {
-        return $this->back;
+        $this->stats = $this->back;
     }
     // face de la carte
-    public function face()
+    public function turn_face()
     {
-        return $this->face;
+        $this->stats = $this->face;
     }
 
     public function allinfo()
@@ -47,11 +46,7 @@ class Card
         return $this->back . $this->face;
     }
     // retourné la carte la carte
-    public function flip()
-    {
-        if (isset($_POST)) {
-            return $this->face;
-        } else {
-        }
-    }
+    // public function flip()
+    // {
+    // }
 }
