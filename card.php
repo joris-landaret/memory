@@ -4,6 +4,7 @@ class Card
 {
     // ATTRIBUT
     public $back;
+    private $face;
     private $cards = [
         'ange' => '<div class="img"><img src="img/ange1.jpg" /></div>',
         'demon' => '<div class="img"><img src="img/demon.jpg" /></div>',

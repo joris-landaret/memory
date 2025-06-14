@@ -1,6 +1,6 @@
 <header>
     <div>
-        <img src="img/rainbow_mountain.jpg" alt="">
+        <img src="img/demon.jpg" alt="">
         <h1>Memory</h1>
     </div>
 
