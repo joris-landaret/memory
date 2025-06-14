@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 include "Card.php";
 
 ?>
@@ -28,34 +29,47 @@ include "Card.php";
             <?php
 
             $tabl = array(
-                new Card('ange'),
-                new Card('demon'),
-                new Card('dragon'),
-                new Card('loup_garou'),
-                new Card('vampire'),
-                new Card('ent'),
-                new Card('fee'),
-                new Card('fenrir'),
-                new Card('pegase'),
-                new Card('valkyrie'),
-                new Card('zombi'),
-                new Card('alien')
+                $card1 = new Card('ange'),
+                $card2 = new Card('demon'),
+                $card3 = new Card('dragon'),
+                $card4 = new Card('loup_garou'),
+                $card5 = new Card('vampire'),
+                $card6 = new Card('ent'),
+                $card7 = new Card('fee'),
+                $card8 = new Card('fenrir'),
+                $card9 = new Card('pegase'),
+                $card10 = new Card('valkyrie'),
+                $card11 = new Card('zombi'),
+                $card12 = new Card('alien'),
+                $card13 = new Card('ange'),
+                $card14 = new Card('demon'),
+                $card15 = new Card('dragon'),
+                $card16 = new Card('loup_garou'),
+                $card17 = new Card('vampire'),
+                $card18 = new Card('ent'),
+                $card19 = new Card('fee'),
+                $card20 = new Card('fenrir'),
+                $card21 = new Card('pegase'),
+                $card22 = new Card('valkyrie'),
+                $card23 = new Card('zombi'),
+                $card24 = new Card('alien')
             );
 
             shuffle($tabl);
 
             foreach ($tabl as $card) {
+                //$card->turn_face();
                 echo $card->stats;
             }
 
-            // for ($i = 0; $i < 12; $i++) {
+            // for ($i = 0; $i < 24; $i++) {
             // }
 
             // $_SESSION['board'];
 
             // if (isset($_POST['flip'])) {
-
-            //     echo $alien_card->face;
+            //     $tab1[1]->turn_face;
+            //     echo $tab1[1]->state;
             // }
 
             ?>

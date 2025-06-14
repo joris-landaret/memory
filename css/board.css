@@ -10,9 +10,9 @@
 }
 .container {
     /* align-items: center; */
-    width: 70%;
-    height: 580px;
-    border: solid 5px yellowgreen;
+    width: 78%;
+    /*height: 580px;*/
+    /*border: solid 5px yellowgreen;*/
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
